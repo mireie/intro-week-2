@@ -64,6 +64,7 @@ $(document).ready(function() {
     console.log("Total Score: "+score);
     
     $("body").css("background-color",color);
+    $("#name").text(q1);
     $(".result").slideToggle(1000);
     $(".survey").slideToggle(1000);
     $("#result").fadeToggle(500);

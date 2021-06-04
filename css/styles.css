@@ -16,7 +16,6 @@
   display:none;
 }
 
-
 [type=radio]:checked + span {
   background-color:rgb(26, 148, 81);
 }
@@ -38,7 +37,7 @@
   border-radius:.5rem;
   background-color:#303030;
   color:white;
-  font-weight:bolder;
+  font-weight:;
 }
 .option-label:hover {
   background-color: rgb(32, 95, 32);
@@ -82,4 +81,7 @@ form:valid .submitted {
 }
 .question {
   display:block;
+}
+.display-4 {
+  font-size:2rem;
 }

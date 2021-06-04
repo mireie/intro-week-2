@@ -14,17 +14,17 @@
 <body>
   <div class="container">
     <div class="survey">
-      <h1>Find Your Language</h1>
-      <p>Answer the questions below and we will determine which language is best for you!</p>
+      <h1 class="display-2">Find Your Language</h1>
+      <p class="lead">Answer the questions below and we will determine which language is best for you!</p>
       <form id="survey">
         <div class="row question">
-          <h3>Your name</h3>
+          <h3 class="display-4">Your name</h3>
           <div class="row form-group">
             <input type="text" class="form-control" id="q1" placeholder="What should we call you?">
           </div>
         </div>
         <div class="row question">
-          <h3>Which adjective speaks to you the most?</h3>
+          <h3 class="display-4">Which adjective speaks to you the most?</h3>
           <div class="form-group form-check-inline row">
           <label for="q2-1">
             <input required class="form-check-input" name="q2" type="radio" id="q2-1" value="0" >
@@ -45,7 +45,7 @@
           </div>
         </div>
         <div class="row question">
-          <h3>Pick your favorite classic movie</h3>
+          <h3 class="display-4">Pick your favorite classic movie</h3>
           <div class="form-group form-check-inline row">
             <label for="q3-1">
               <input required class="form-check-input" name="q3" type="radio" id="q3-1" value="5" >
@@ -72,7 +72,7 @@
           </div>
         </div>
         <div class="row question">
-          <h3>How many fingers am I holding up behind my back?</h3>
+          <h3 class="display-4">How many fingers am I holding up behind my back?</h3>
           <div class="form-group form-check-inline row">
             <label for="q4-1">
               <input required class="form-check-input" name="q4" type="radio" id="q4-1" value="5" >
@@ -99,7 +99,7 @@
           </div>
         </div>
         <div class="row question">
-            <h3>Favorite Flintstone?</h3>
+            <h3 class="display-4">Favorite Flintstone?</h3>
           <div class="form-group form-check-inline row">
             <label for="q5-1">
               <input required class="form-check-input" name="q5" type="radio" id="q5-1" value="5" >
@@ -126,7 +126,7 @@
           </div>
         </div>
         <div class="row question">
-          <h3>Which of these questions has been your favorite?</h3>
+          <h3 class="display-4">Which of these questions has been your favorite?</h3>
           <div class="form-group form-check-inline row">
             <label for="q6-1">
               <input required class="form-check-input" name="q6" type="radio" id="q6-1" value="5" >
@@ -153,7 +153,7 @@
           </div>
         </div>
         <div class="row question">
-          <h3>Pick a color</h3>
+          <h3 class="display-4">Pick a color</h3>
           <input type="color" id="color" name="color">
         </div>
         
@@ -164,9 +164,9 @@
       </form>
     </div>
     <div class="result">
-      <p>Based on your answers, our very scientific result is:</p>
-      <h3 id="result"></h3>
-      <button class ="btn btn-warning" type="reset" id="reset">Reset</button>
+      <h2 class="display-1">Thanks <span id="name"></span>,</h2>
+      <p class="lead">Based on your answers, our very scientific process has discovered that <span class="display-2" id="result"></span> is the best language for you.</p>
+      <button class ="btn btn-warning" type="reset" id="reset">Wait, that's not right!</button>
     </div>
   </div>
 </body>
