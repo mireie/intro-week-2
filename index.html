@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
-
   <title>Programming Language Suggester</title>
 </head>
 <body>
@@ -26,10 +25,10 @@
         <div class="row question">
           <h3 class="display-4">Which adjective speaks to you the most?</h3>
           <div class="form-group form-check-inline row">
-          <label for="q2-1">
-            <input required class="form-check-input" name="q2" type="radio" id="q2-1" value="0" >
-            <span class="option-label">Primal</span>
-          </label>
+            <label for="q2-1">
+              <input required class="form-check-input" name="q2" type="radio" id="q2-1" value="0" >
+              <span class="option-label">Primal</span>
+            </label>
           </div>
           <div class="form-group form-check-inline row">
             <label for="q2-2">
@@ -99,7 +98,7 @@
           </div>
         </div>
         <div class="row question">
-            <h3 class="display-4">Favorite Flintstone?</h3>
+          <h3 class="display-4">Favorite Flintstone?</h3>
           <div class="form-group form-check-inline row">
             <label for="q5-1">
               <input required class="form-check-input" name="q5" type="radio" id="q5-1" value="5" >
@@ -156,19 +155,17 @@
           <h3 class="display-4">Pick a color</h3>
           <input type="color" id="color" name="color">
         </div>
-        
         <div id="submit-box">
         <button id="submit" type="submit" class="btn btn-primary">Figure it out!</button>
-          <div id="validation">Please select an option for each question above.</div>
-        </div>
-      </form>
-    </div>
-    <div class="result">
-      <h2 class="display-3">Thanks <span id="name"></span>,</h2>
-      <p class="lead">Based on your answers, our very scientific process has discovered that...<br>
-        <span class="display-2" id="result"></span> is the best language for you.</p>
-      <button class ="btn btn-warning" type="reset" id="reset">Wait, that's not right!</button>
-    </div>
+        <div id="validation">Please select an option for each question above.</div>
+      </div>
+    </form>
+  </div>
+  <div class="result">
+    <h2 class="display-3">Thanks <span id="name"></span>,</h2>
+    <p class="lead">Based on your answers, our very scientific process has discovered that...<br>
+      <span class="display-2" id="result"></span> is the best language for you.</p>
+    <button class ="btn btn-warning" type="reset" id="reset">Wait, that's not right!</button>
   </div>
 </body>
 </html>

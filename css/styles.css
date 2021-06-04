@@ -1,7 +1,6 @@
 .container {
   background-color:rgb(210, 241, 255);
   opacity:.9;
-
 }
 
 .survey, .result {
@@ -37,7 +36,6 @@
   border-radius:.5rem;
   background-color:#303030;
   color:white;
-  font-weight:;
 }
 .option-label:hover {
   background-color: rgb(32, 95, 32);
@@ -64,6 +62,8 @@ form:valid .submitted {
   margin:1rem;
   padding:1rem;
   border-radius: .5rem;
+  display:block;
+  min-height:118px;
 }
 #color {
   margin:auto;
@@ -75,12 +75,6 @@ form:valid .submitted {
   display:block;
   margin:auto;
   margin-top:1.5rem;
-}
-#submit-box {
-  min-height:118px;
-}
-.question {
-  display:block;
 }
 .display-4 {
   font-size:2rem;
