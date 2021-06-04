@@ -22,6 +22,12 @@ $(document).ready(function() {
     const color = $("#color").val();
     const score = totalScore(q2,q3,q4,q5,q6);
     
+    /* debugging tools
+    const debug = [q1,q2,q3,q4,q5,q6,color].join(' | ');
+    console.log(debug);
+    console.log("Total Score: "+score);
+    */  
+    
     if (score % 7 === 0) {
       result= "Go";
     } else {
@@ -61,11 +67,5 @@ $(document).ready(function() {
     $('#validation').removeClass('submitted');
     $('#validation').hide();
     $("body").css("background-color","white");
-
-  /* debugging tools
-    const debug = [q1,q2,q3,q4,q5,q6,color].join(' | ');
-    console.log(debug);
-    console.log("Total Score: "+score);
-    */  
   });
 })
