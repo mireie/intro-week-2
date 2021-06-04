@@ -1,11 +1,11 @@
 .container {
   background-color:#eee;
   opacity:.9;
-  max-width:60%
+
 }
 
 .survey, .result {
-  width:500px;
+  max-width:800px;
   margin:auto;
   border: solid #eee 1px;
   padding:1rem;
@@ -75,4 +75,7 @@ form:valid .submitted {
 }
 #submit-box {
   min-height:118px;
+}
+.question {
+  display:block;
 }
