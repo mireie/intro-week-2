@@ -74,6 +74,7 @@ $(document).ready(function() {
     $("#result").fadeToggle(500);
     $('#validation').removeClass('submitted');
     $('#validation').hide();
+    $("body").css("background-color","white");
     
   });
 })

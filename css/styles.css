@@ -40,9 +40,13 @@
   color:white;
   font-weight:bolder;
 }
+.option-label:hover {
+  background-color: rgb(32, 95, 32);
+}
 
 .form-group {
   margin:1rem 0;
+  line-height:1rem;
 }
 #validation {
   display:none;
