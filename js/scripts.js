@@ -8,18 +8,6 @@ $(document).ready(function() {
   $('button#submit').click(function() {
     $('#validation').addClass('submitted');
   })
-  $("form").validate( {
-    rules: {
-      "q2": {
-        required:true
-      }
-    },
-    messages: {
-      "q2":{
-        required:"You need to enter this.",
-      }
-    }
-  })
   
   $("form#survey").submit(function(event) {
     event.preventDefault();
@@ -83,6 +71,7 @@ $(document).ready(function() {
     $(".survey").slideToggle(2000);
     $("#survey")[0].reset();
     $("#result").fadeToggle(1000);
+    $('#validation').removeClass('submitted');
     
   });
 })
