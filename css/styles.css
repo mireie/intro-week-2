@@ -41,3 +41,10 @@
 .form-group {
   margin:1rem 0;
 }
+#validation {
+}
+
+form:invalid .submitted {
+  background-color:red;
+  
+}

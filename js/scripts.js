@@ -5,8 +5,26 @@ function totalScore(q2,q3,q4,q5,q6) {
 
 //Interface Logic
 $(document).ready(function() {
+  $('button#submit').click(function() {
+    $('#validation').addClass('submitted');
+  })
+  $("form").validate( {
+    rules: {
+      "q2": {
+        required:true
+      }
+    },
+    messages: {
+      "q2":{
+        required:"You need to enter this.",
+      }
+    }
+  })
+  
   $("form#survey").submit(function(event) {
     event.preventDefault();
+    
+    
     const q1 = $("#q1").val();
     const q2 = parseInt($("input:radio[name=q2]:checked").val());
     const q3 = parseInt($("input:radio[name=q3]:checked").val());
@@ -59,7 +77,7 @@ $(document).ready(function() {
     $(".survey").slideToggle(2000);
     $("#result").fadeToggle(1000);
 
-  })
+  });
   $("#reset").click(function() {
     $(".result").slideToggle(2000);
     $(".survey").slideToggle(2000);
