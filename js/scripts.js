@@ -7,6 +7,7 @@ function totalScore(q2,q3,q4,q5,q6) {
 $(document).ready(function() {
   $('button#submit').click(function() {
     $('#validation').addClass('submitted');
+    $('#validation').show();
   })
   
   $("form#survey").submit(function(event) {
@@ -61,17 +62,18 @@ $(document).ready(function() {
     console.log(debug);
     console.log("Total Score: "+score);
     $("body").css("background-color",color);
-    $(".result").slideToggle(2000);
-    $(".survey").slideToggle(2000);
-    $("#result").fadeToggle(1000);
+    $(".result").slideToggle(1000);
+    $(".survey").slideToggle(1000);
+    $("#result").fadeToggle(500);
 
   });
   $("#reset").click(function() {
-    $(".result").slideToggle(2000);
-    $(".survey").slideToggle(2000);
+    $(".result").slideToggle(1000);
+    $(".survey").slideToggle(1000);
     $("#survey")[0].reset();
-    $("#result").fadeToggle(1000);
+    $("#result").fadeToggle(500);
     $('#validation').removeClass('submitted');
+    $('#validation').hide();
     
   });
 })

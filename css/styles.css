@@ -1,5 +1,7 @@
 .container {
   background-color:#eee;
+  opacity:.9;
+  max-width:60%
 }
 
 .survey, .result {
@@ -8,6 +10,7 @@
   border: solid #eee 1px;
   padding:1rem;
   margin-top:1rem;
+  min-height:160
 }
 .result, #result {
   display:none;
@@ -42,9 +45,34 @@
   margin:1rem 0;
 }
 #validation {
+  display:none;
 }
 
 form:invalid .submitted {
-  background-color:red;
-  
+  background-color:rgb(252, 182, 182);
+  padding:1rem;
+  margin-top:1rem;
+}
+form:valid .submitted {
+  opacity:0;
+}
+.question, #submit-box {
+  background-color:white;
+  margin:1rem;
+  padding:1rem;
+  border-radius: .5rem;
+}
+#color {
+  margin:auto;
+  display:block;
+  height:100px;
+  width:100%;
+}
+#submit {
+  display:block;
+  margin:auto;
+  margin-top:1.5rem;
+}
+#submit-box {
+  min-height:118px;
 }
