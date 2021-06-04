@@ -24,7 +24,7 @@ $(document).ready(function() {
     const score = totalScore(q2,q3,q4,q5,q6);
     
 
-    if (score % 3 === 0) {
+    if (score % 7 === 0) {
       result= "Go";
     } else {
       if (q2 === 0) {
