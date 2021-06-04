@@ -1,7 +1,42 @@
+.container {
+  background-color:#eee;
+}
+
 .survey, .result {
   width:500px;
   margin:auto;
   border: solid #eee 1px;
   padding:1rem;
   margin-top:1rem;
+}
+.result {
+  display:none;
+}
+
+[type=radio]:checked + span {
+  background-color:rgb(26, 148, 81);
+}
+
+[type=radio] { 
+  opacity: 0;
+  height:0;
+  width: 0;
+}
+
+[type=radio] + span {
+  cursor: pointer;
+}
+
+.option-label {
+  border:solid black 1px;
+  padding:.5rem;
+  margin:1rem;
+  border-radius:.5rem;
+  background-color:#303030;
+  color:white;
+  font-weight:bolder;
+}
+
+.form-group {
+  margin:1rem 0;
 }

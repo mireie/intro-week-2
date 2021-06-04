@@ -50,11 +50,15 @@ $(document).ready(function() {
       }
     }
     $("#result").text(result);
+    $("")
     //debugging
     const debug = [q1,q2,q3,q4,q5,q6,color].join(' | ');
     console.log(debug);
     console.log("Total Score: "+score);
-    
+    $("body").css("background-color",color);
+    $(".result").slideToggle(2000);
+    $(".survey").slideToggle(2000);
+
   })
 })
 
