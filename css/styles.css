@@ -9,9 +9,10 @@
   padding:1rem;
   margin-top:1rem;
 }
-.result {
+.result, #result {
   display:none;
 }
+
 
 [type=radio]:checked + span {
   background-color:rgb(26, 148, 81);
