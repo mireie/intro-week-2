@@ -1,15 +1,13 @@
 .container {
   background-color:rgb(210, 241, 255);
   opacity:.9;
+  padding-bottom:1rem;
 }
 
 .survey, .result {
   max-width:800px;
   margin:auto;
-  padding:1rem;
-  margin-top:1rem;
-  margin-bottom:1rem;
-  min-height:160
+  min-height:160px;
 }
 .result, #result {
   display:none;
