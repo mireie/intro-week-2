@@ -43,7 +43,7 @@ $(document).ready(function() {
         } else {
           result= "JavaScript";
         }
-      } else if (q2 === 2) {
+      } else {
         if (score % 2 === 0) {
           result= "Ruby";
         } else {
